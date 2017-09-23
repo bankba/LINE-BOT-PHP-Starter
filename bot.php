@@ -26,7 +26,7 @@ if (!is_null($events['events'])) {
 				'text' => "หำตั้งเลยครับ"
 			];
 		}
-		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
+		/*if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
 			// Get replyToken
@@ -44,7 +44,7 @@ if (!is_null($events['events'])) {
 			];
 
 
-		}
+		}*/
 		
 		// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
